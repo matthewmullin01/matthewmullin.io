@@ -1,0 +1,43 @@
+@import '../card-2.scss';
+
+.my-card {
+  margin-right: 220px;
+  overflow: visible;
+  border-bottom: #9ca7df 10px solid;
+  margin-bottom: 30px;
+}
+.card-image {
+  position: absolute;
+  width: 600px;
+  bottom: -30px;
+  right: -270px;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* Target devices narrower than . */
+
+  .my-card {
+    margin-right: 0px;
+    overflow: hidden;
+  }
+  .card-image {
+    position: unset;
+    margin-left: -55px;
+  }
+
+  .card-image-holder {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Target devices narrower than . */
+
+  .card-image {
+    margin-left: 15px;
+  }
+
+  .card-image-holder {
+    padding-top: 0px;
+  }
+}

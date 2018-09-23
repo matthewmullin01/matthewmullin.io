@@ -1,0 +1,25 @@
+:host {
+  font-size: 14px;
+}
+
+.button-holder {
+  margin-top: 40px;
+  > button {
+    font-size: 1em;
+    margin-right: 10px;
+  }
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+.project-title {
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.project-content {
+  line-height: 1.7;
+}

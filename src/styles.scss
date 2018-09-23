@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+$bg-color: #f6f9fc;
+$bg-color-2: #edf0ff;
+$color-primary: #7785d7;
+$color-secondary: #9ee8c5;
+$color-text: #55627c;
+
+$theme-colors: (
+  primary: $color-primary,
+  secondary: $color-secondary,
+  // success: $green,
+    // info: $cyan,
+    // warning: $yellow,
+    // danger: $red,
+    // light: $gray-100,
+    // dark: $gray-800
+) !default;
+
+@import './node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: $bg-color;
+  color: $color-text;
+}
+
+h1 {
+  color: $color-primary;
+}
+
+.background-alt {
+  background-color: $bg-color-2;
+}
+
+.section-title {
+  .divider-block {
+    width: 30px;
+    height: 8px;
+    margin-bottom: 55px;
+    background-color: $color-primary;
+  }
+}
+
+.btn-outline-primary,
+.btn-outline-secondary {
+  border-width: 4px;
+  color: $color-text;
+}

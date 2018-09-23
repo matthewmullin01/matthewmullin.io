@@ -1,20 +1,110 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<app-navbar></app-navbar>
 
+<div class="container-fluid header">
+
+  <div id="home" class="row">
+    <div class="col-md-6 full-height">
+      <div class="center-header-text">
+        <h1>> Hi, I'm Matthew</h1>
+        <h3>I like to tinker with code</h3>
+      </div>
+    </div>
+
+    <div class="col-md-6 full-height">
+      <div class="center-vertical">
+        <app-terminal></app-terminal>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" class="background-alt">
+  <div class="container">
+    <div id="projects" class="row">
+
+      <div class="col-md-12">
+        <div class="section-title">
+          <h3 class="text-center"> Projects </h3>
+          <div class="divider-block center-horizontal"></div>
+        </div>
+
+        <div>
+          <app-horizontal-card-2></app-horizontal-card-2>
+        </div>
+        <div>
+          <app-horizontal-card-2></app-horizontal-card-2>
+        </div>
+        <div>
+          <app-horizontal-card-2></app-horizontal-card-2>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="blog" class="row">
+
+    <div class="col-md-12">
+      <div class="section-title">
+        <h3 class="text-center"> Blog </h3>
+        <div class="divider-block center-horizontal"></div>
+      </div>
+
+      <div>
+        <app-horizontal-card></app-horizontal-card>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <app-vertical-card orientation="vertical"></app-vertical-card>
+        </div>
+        <div class="col-md-6">
+          <app-vertical-card orientation="vertical"></app-vertical-card>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="contact" class="contact-me row">
+
+    <div class="col-md-12">
+      <div class="section-title">
+        <h3 class="text-center"> matthewmullin01@gmail.com </h3>
+        <div class="divider-block center-horizontal"></div>
+      </div>
+
+      <!-- <div class="contact-email text-center">
+        <h5>matthewmullin01@gmail.com</h5>
+      </div> -->
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <footer class="footer row">
+
+    <div class="col-md-12">
+
+      <div class="float-left">
+        <b>matthewmullin</b>
+        <span>.All rights reserved</span>
+      </div>
+
+      <div class="float-right">
+        <ul class="link-icons-list">
+          <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+          <li><a href="#"><i class="fab fa-github"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+</div>

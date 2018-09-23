@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$toolbar-color: #e4e4e6;
+$terminal-color: #5a5e79;
+$text-color-primary: #f8f9fa;
+$text-color-secondary: #bfb58e;
+// $text-color-...: #...;
+
+$toolbar-height: 30px;
+$toolbar-action-size: 8px;
+$toolbar-red: #fa6261;
+$toolbar-yellow: #fbbb4d;
+$toolbar-green: #3dc651;
+
+.whole-terminal {
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.15), 0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.fullscreen {
+  width: 100%;
+  height: 100%;
+}
+
+.toolbar {
+  height: $toolbar-height;
+  background-color: $toolbar-color;
+  border-radius: 10px 10px 0 0;
+
+  .toolbar-actions {
+    .toolbar-action {
+      position: absolute;
+      top: calc(#{$toolbar-height} / 2 - #{$toolbar-action-size} / 2 + 2px);
+      border-radius: 100%;
+      height: 10px;
+      width: 10px;
+    }
+    .red {
+      left: calc(14px + (0 * #{$toolbar-action-size} * 2.2));
+      background-color: $toolbar-red;
+      box-shadow: darken($toolbar-red, 6%) 0 0 0.1px 1px;
+    }
+    .yellow {
+      left: calc(14px + (1 * #{$toolbar-action-size} * 2.2));
+      background-color: $toolbar-yellow;
+      box-shadow: darken($toolbar-yellow, 6%) 0 0 0.1px 1px;
+    }
+    .green {
+      left: calc(14px + (2 * #{$toolbar-action-size} * 2.2));
+      background-color: $toolbar-green;
+      box-shadow: darken($toolbar-green, 6%) 0 0 0.1px 1px;
+    }
+  }
+}
+
+.terminal {
+  font-family: 'Open Sans', sans-serif;
+  max-height: 90vh;
+  background-color: $terminal-color;
+  color: $text-color-primary;
+  border-radius: 0px 0px 4px 4px;
+  line-height: 1.2;
+  overflow: auto;
+
+  .io-group {
+    margin-top: 30px;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  .input-text {
+    color: $text-color-primary;
+  }
+
+  .output-text {
+    color: $text-color-secondary;
+  }
+}
