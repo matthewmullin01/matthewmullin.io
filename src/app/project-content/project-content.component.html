@@ -2,23 +2,13 @@
 
   <div class="col-12">
 
-    <h4 class="project-title">Project Title</h4>
+    <h4 class="project-title">{{ cardInfo.title }}</h4>
 
-    <span class="project-content">
-      Vivamus quis congue lacus. Sed ligula nisl, cursus et tincidunt sit amet, pulvinar vel tellus. Nulla fringilla,
-      urna nec vestibulum eleifend, nunc leo volutpat tellus, euismod gravida lacus arcu eu mi. Donec eu vestibulum
-      magna, id interdum risus. Donec ornare laoreet nulla, ac egestas leo mollis ac. Nunc felis est, cursus sit amet
-      neque id, est interdum risus. Donec ornare laoreet nulla, ac egestas leo mollis ac. Nunc felis est, cursus sit
-      amet
-      neque id.
-    </span>
+    <span class="project-content" [innerHTML]="cardInfo.body"></span>
 
     <div class="button-holder">
-      <button type="button" class="btn btn-outline-secondary">Apple</button>
-      <button type="button" class="btn btn-outline-secondary">Samsung</button>
-      <button type="button" class="btn btn-outline-secondary">Sony</button>
+      <button *ngFor="let tag of cardInfo.tags" type="button" class="btn btn-outline-secondary"> {{ tag }} </button>
     </div>
-
 
   </div>
 

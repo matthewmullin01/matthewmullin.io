@@ -28,15 +28,15 @@
           <div class="divider-block center-horizontal"></div>
         </div>
 
-        <div>
+        <div *ngFor="let project of projects">
+          <app-horizontal-card-2 [cardInfo]="project"></app-horizontal-card-2>
+        </div>
+        <!-- <div>
           <app-horizontal-card-2></app-horizontal-card-2>
         </div>
         <div>
           <app-horizontal-card-2></app-horizontal-card-2>
-        </div>
-        <div>
-          <app-horizontal-card-2></app-horizontal-card-2>
-        </div>
+        </div> -->
 
 
       </div>
@@ -44,7 +44,7 @@
   </div>
 </div>
 
-<div class="container">
+<!-- <div class="container">
   <div id="blog" class="row">
 
     <div class="col-md-12">
@@ -68,7 +68,7 @@
 
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="container">
   <div id="contact" class="contact-me row">
@@ -78,11 +78,6 @@
         <h3 class="text-center"> matthewmullin01@gmail.com </h3>
         <div class="divider-block center-horizontal"></div>
       </div>
-
-      <!-- <div class="contact-email text-center">
-        <h5>matthewmullin01@gmail.com</h5>
-      </div> -->
-
     </div>
   </div>
 </div>
@@ -92,12 +87,12 @@
 
     <div class="col-md-12">
 
-      <div class="float-left">
-        <b>matthewmullin</b>
-        <span>.All rights reserved</span>
+      <div class="text-center float-sm-left">
+        <img src="/src/assets/m..svg" alt="Matthew">
+        <span style="font-size: 10px; vertical-align: sub; color: black"> All rights reserved</span>
       </div>
 
-      <div class="float-right">
+      <div class="text-center float-sm-right">
         <ul class="link-icons-list">
           <li><a href="#"><i class="fas fa-envelope"></i></a></li>
           <li><a href="#"><i class="fab fa-github"></i></a></li>

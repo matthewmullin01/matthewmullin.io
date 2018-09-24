@@ -3,10 +3,11 @@
 }
 
 .button-holder {
-  margin-top: 40px;
+  margin-top: 35px;
   > button {
     font-size: 1em;
     margin-right: 10px;
+    margin-top: 4px;
   }
 }
 
@@ -22,4 +23,12 @@ h4 {
 
 .project-content {
   line-height: 1.7;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Target devices narrower than . */
+
+  .button-holder {
+    text-align: center;
+  }
 }

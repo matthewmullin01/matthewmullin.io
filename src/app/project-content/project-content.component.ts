@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Card } from '../modals/card.modal';
 
 @Component({
   selector: 'app-project-content',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project-content.component.scss']
 })
 export class ProjectContentComponent implements OnInit {
+  @Input()
+  cardInfo: Card;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
